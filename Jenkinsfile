@@ -1,16 +1,21 @@
 pipeline {
   agent {
     node {
-      label 'agent'
+      label 'controller'
     }
 
   }
   stages {
-    stage('Buzz Buzz') {
+    stage('Build') {
       steps {
-        echo 'Bees Buzz!'
+        sh 'mvn install'
+        echo 'Build done'
       }
     }
 
+  }
+  tools {
+    maven 'mvn3'
+    jdk 'jdk'
   }
 }
