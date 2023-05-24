@@ -4,6 +4,6 @@
 
 ## Lab 10 - Template method design pattern
 
-Note: This prohect was originally created for coursework, however it is currently being used to practice Jenkins.
+Note: This project was originally created for coursework, however it is currently being used to practice Jenkins.
 ---
 Github Actions service was used to implement continuous integration.
